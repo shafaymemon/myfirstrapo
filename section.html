@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyC6BTIqx37a47CHisVToeXsDeNrV2x3x5w",
+      authDomain: "dbschool-a835e.firebaseapp.com",
+      databaseURL: "https://dbschool-a835e-default-rtdb.firebaseio.com",
+      projectId: "dbschool-a835e",
+      storageBucket: "dbschool-a835e.appspot.com",
+      messagingSenderId: "9971475420",
+      appId: "1:9971475420:web:09289f67667625e7f12519",
+      measurementId: "G-E2Y0E7CBDZ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    //firebase.analytics();
+  </script>
+<script src="section.js"></script>  
+</head>
+<body>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Section Title</label>
+                <input type="text" class="form-control" id="txtSectionTitle" placeholder="section">
+              </div>
+        </div>
+
+        <input type="button" value="Add Section Titel" onclick="funsectionTitle()">
+    </form>
+</body>
+</html>
